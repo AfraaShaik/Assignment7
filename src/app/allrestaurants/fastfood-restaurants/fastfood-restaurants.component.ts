@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from '../../navbar/navbar.component';
 import { RouterLink } from '@angular/router';
-
 import { RestaurantService } from '../../restaurant.service';
 
 
