@@ -1,6 +1,7 @@
-<nav class="flex p-4 justify-around items-center shadow-lg ">
-    <div class="flex justify-around w-1/6">
-        <a><svg class="VXJlj" viewBox="0 0 61 61" height="49" width="49">
+<nav class="flex flex-col md:flex-row p-4 justify-between items-center shadow-lg">
+    <div class="flex justify-between w-full md:w-1/6">
+        <a>
+            <svg class="VXJlj" viewBox="0 0 61 61" height="49" width="49">
                 <g clip-path="url(#a)">
                     <path fill="#FF5200"
                         d="M.32 30.5c0-12.966 0-19.446 3.498-23.868a16.086 16.086 0 0 1 2.634-2.634C10.868.5 17.354.5 30.32.5s19.446 0 23.868 3.498c.978.774 1.86 1.656 2.634 2.634C60.32 11.048 60.32 17.534 60.32 30.5s0 19.446-3.498 23.868a16.086 16.086 0 0 1-2.634 2.634C49.772 60.5 43.286 60.5 30.32 60.5s-19.446 0-23.868-3.498a16.086 16.086 0 0 1-2.634-2.634C.32 49.952.32 43.466.32 30.5Z">
@@ -14,23 +15,21 @@
                         <path fill="#fff" d="M.32.5h60v60h-60z"></path>
                     </clipPath>
                 </defs>
-            </svg></a>
+            </svg>
+        </a>
         <div class="flex items-center">
             <p class="text-slate-800 border-b-2 border-slate-800 pb-1 mr-2 font-bold">Other</p>
-            <svg width="20" height="20" viewBox="0 0 20 21" fill="none" aria-label="rating-down-down-icon"
-                aria-hidden="false" strokeColor="rgba(2, 6, 12, 0.92)" fillColor="rgba(2, 6, 12, 0.92)">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M1.372 6.15a1.1 1.1 0 0 0-.117 1.552l7.184 8.355.03.035c.149.173.327.381.504.536.212.186.564.427 1.058.427s.847-.24 1.059-.427c.177-.155.355-.363.504-.536l.03-.035 7.12-8.282a1.1 1.1 0 0 0-1.668-1.434l-7.045 8.194-7.108-8.267a1.1 1.1 0 0 0-1.55-.117"
-                    fill="rgba(241, 90, 34, 1)" fill-opacity="0.92"></path>
+            <svg width ="20" height="20" viewBox="0 0 20 21" fill="none" aria-label="rating-down-down-icon" aria-hidden="false" strokeColor="rgba(2, 6, 12, 0.92)" fillColor="rgba(2, 6, 12, 0.92)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.372 6.15a1.1 1.1 0 0 0-.117 1.552l7.184 8.355.03.035c.149.173.327.381.504.536.212.186.564.427 1.058.427s.847-.24 1.059-.427c.177-.155.355-.363.504-.536l.03-.035 7.12-8.282a1.1 1.1 0 0 0-1.668-1.434l-7.045 8.194-7.108-8.267a1.1 1.1 0 0 0-1.55-.117" fill="rgba(241, 90, 34, 1)" fill-opacity="0.92"></path>
             </svg>
         </div>
     </div>
-    <div class="flex justify-around w-1/2">
-        <a href="https://www.swiggy.com/corporate/">Swiggy Corporate</a>
-        <a>Search</a>
-        <a routerLink="/restaurants">Offers</a>
-        <a href="https://www.swiggy.com/support">Help</a>
-        <a routerLink="/register">Sign In</a>
-        <a routerLink="/cart" >Cart<span class="btn px-2 py-1 rounded-md bg-[#ff5200] text-white">{{totalQuantity}}</span></a>
+    <div class="flex flex-col md:flex-row justify-around w-full md:w-1/2 mt-4 md:mt-0">
+        <a href="https://www.swiggy.com/corporate/" class="text-center">Swiggy Corporate</a>
+        <a class="text-center">Search</a>
+        <a routerLink="/restaurants" class="text-center">Offers</a>
+        <a href="https://www.swiggy.com/support" class="text-center">Help</a>
+        <a routerLink="/register" class="text-center">Sign In</a>
+        <a routerLink="/cart" class="text-center">Cart<span class="btn px-2 py-1 rounded-md bg-[#ff5200] text-white">{{totalQuantity}}</span></a>
     </div>
 </nav>

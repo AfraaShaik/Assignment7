@@ -36,7 +36,7 @@ export class LoginComponent {
           localStorage.setItem('userName', user.name);
 
           
-          this.router.navigate(['/cart']);
+          this.router.navigate(['/home']);
         } else {
           alert("User not found. Please register an account.");
         }
